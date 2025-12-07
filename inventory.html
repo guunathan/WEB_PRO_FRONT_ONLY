@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokpla Store - Cart</title>
+  <link rel="stylesheet" href="inventory.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <a href="index.html">
+          <img src="img/new_logo01.png" alt="Logo" />
+        </a>
+        <a class="store-name">Tokpla Store</a>
+      </div>
+      <div class="header-center">
+        <input type="text" placeholder="ค้นหาสินค้า..." />
+      </div>
+      <div class="nav-right">
+        <a href="index.html">หน้าแรก</a>
+        <a href="item.html">สินค้า</a>
+        <a href="#">ติดต่อ</a>
+        <a href="cart.html" class="active">
+          <img
+            src="https://images.emojiterra.com/google/android-12l/512px/1f6d2.png"
+            class="cart-icon"
+          />
+        </a>
+        <a href="login.html">เข้าสู่ระบบ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="cart-container">
+    <!-- Left: Cart Items -->
+    <section class="cart-items">
+      <h2>🛒 ตะกร้าสินค้าของคุณ</h2>
+
+      <div class="cart-item">
+        <img src="img/fishing-rod.jpg" alt="เบ็ดตกปลา" />
+        <div class="item-info">
+          <h3>เบ็ดตกปลา</h3>
+          <p>หมวดหมู่: มือใหม่</p>
+          <p>จำนวน: 1 ชิ้น</p>
+        </div>
+        <div class="item-price">
+          <p>฿1,200</p>
+          <button class="remove-btn">ลบ</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="img/reel.jpg" alt="รอกตกปลา" />
+        <div class="item-info">
+          <h3>รอกตกปลา</h3>
+          <p>หมวดหมู่: มืออาชีพ</p>
+          <p>จำนวน: 1 ชิ้น</p>
+        </div>
+        <div class="item-price">
+          <p>฿1,500</p>
+          <button class="remove-btn">ลบ</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Summary -->
+    <aside class="cart-summary">
+      <h3>สรุปคำสั่งซื้อ</h3>
+
+      <div class="summary-row">
+        <span>ยอดรวมสินค้า</span>
+        <span>฿2,700</span>
+      </div>
+
+      <div class="summary-row">
+        <span>ส่วนลด</span>
+        <input type="text" id="discount" placeholder="ใส่โค้ดส่วนลด" />
+      </div>
+
+      <div class="summary-row total">
+        <span>ยอดสุทธิ</span>
+        <span id="total-price">฿2,700</span>
+      </div>
+
+      <button class="checkout-btn">จ่ายเงิน</button>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Tokpla Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // ตัวอย่างจำลองส่วนลด
+    const discountInput = document.getElementById("discount");
+    const totalPrice = document.getElementById("total-price");
+
+    discountInput.addEventListener("input", () => {
+      if (discountInput.value.toLowerCase() === "tokpla10") {
+        totalPrice.textContent = "฿2,430"; // ลด 10%
+      } else {
+        totalPrice.textContent = "฿2,700";
+      }
+    });
+
+    document.querySelector(".checkout-btn").addEventListener("click", () => {
+      alert("ขอบคุณที่สั่งซื้อ! ระบบจะนำไปหน้าชำระเงินครับ 🎣");
+    });
+  </script>
+</body>
+</html>

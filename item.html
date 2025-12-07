@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokpla Store - สินค้า</title>
+    <link rel="stylesheet" href="item.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="img/new_logo01.png" alt="Tokpla Logo">
+                </a>
+                <a class="store-name">Tokpla Store</a>
+            </div>
+
+            <!-- Center: Search Bar -->
+            <div class="header-center">
+                <input type="text" placeholder="ค้นหาสินค้า...">
+            </div>
+
+            <!-- Right: Navigation -->
+            <div class="nav-right">
+                <a href="index.html">หน้าแรก</a>
+                <a href="item.html">สินค้า</a>
+                <a href="contract.html">ติดต่อ</a>
+                <a href="inventory.html">
+                    <img src="https://images.emojiterra.com/google/android-12l/512px/1f6d2.png" alt="cart"
+                        class="cart-icon">
+                </a>
+                <a href="login.html">เข้าสู่ระบบ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="products-page container">
+        <!-- Left sidebar: Categories -->
+        <aside class="sidebar">
+            <h2>หมวดหมู่สินค้า</h2>
+            <ul>
+                <li><a href="#">รอก</a></li>
+                <li><a href="#">คันเบ็ด</a></li>
+                <li><a href="#">เอ็น</a></li>
+                <li><a href="#">เหยื่อ</a></li>
+                <li><a href="#">ชุดเบ็ดสำเร็จ</a></li>
+            </ul>
+        </aside>
+
+        <!-- Right content: Products -->
+        <section class="product-list">
+            <h2>สินค้าทั้งหมด</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-grid" id="product-grid"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Tokpla Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
