@@ -171,7 +171,7 @@
 
     function scrollProducts(button, direction) {
             const container = button.parentElement.querySelector('.product-wrapper');
-            const scrollAmount = 310; // ขนาดของการ์ด + gap
+            const scrollAmount = 310; 
             
             if (direction === 'left') {
                 container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
@@ -180,11 +180,36 @@
             }
         }
 
-        // Hero slider functionality
         const dots = document.querySelectorAll('.dot');
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 dots.forEach(d => d.classList.remove('active'));
                 dot.classList.add('active');
             });
+        });
+
+
+        const modal = document.getElementById('detailmodal');
+        const viewModalBtn = document.getElementById('viewmodal');
+        const closeBtn = document.querySelector('.close');
+        viewModalBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; 
+        });
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        });
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
         });
