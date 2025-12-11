@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-pages</title>
+    <link rel="stylesheet" href="shopping-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="Main.html">
+                    <img class="picturelogo" src="img/new_logo01.png" alt="Logo">
+                </a>
+                <div class="store-name">TOKPHA STORE</div>
+            </div>
+
+            <div class="header-center">
+                <input type="text" placeholder="What can i find for you?">
+            </div>
+
+            <div class="nav-right">
+                <a class ="startnav-right" href="Main.html">Main</a>
+                <a href="product-pages.html">Product</a>
+                <a href="contract.html">Contact us</a>
+                <a href="cartshop.html">
+                    <img src="https://images.emojiterra.com/google/android-12l/512px/1f6d2.png" alt="cart"
+                        class="cart-icon">
+                </a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-bottom">
+        <nav class="category-nav">
+            <a href="#">Fishing</a>
+            <a href="#">Fishing bait</a>
+            <a href="#">Fishing reel</a>
+            <a href="#">Fishing line</a>
+        </nav>
+    </div>
+
+   <main class ="product-container">
+        <div class="pro-img">
+            <div class="thumbnail active">view1</div>
+            <div class="thumbnail">view2</div>
+            <div class ="thumbnail">view3</div>  <!--เอาไว้ใส่รูปมุมอื่นๆของรูป product-->
+        </div>
+
+        <div class="top-img-contain">
+            <img src="https://via.placeholder.com/400x400?text=Fishing+Rod" alt="Product" class="main-image">
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">The Fishing Tiger<div></div>MegaCast Spining Combo</h1>
+
+
+                <div class ="product-price">
+                    1350 Baht.
+                <p class="new-badge">NEW</p>
+                </div>
+
+                <div class="filter-product">
+                    <div class="filter-title">ORDER BY FILTER</div>
+
+                    <div class ="filter-group">
+                        <label class="filter-label">Fishing-rob size: 30 </label>
+                        <div class ="filter-options">
+                        <button class="filter-option">10</button>
+                        <button class="filter-option active">30</button>
+                        <button class="filter-option">50</button>
+                        <button class="filter-option">x</button>
+                        </div>
+                    </div>
+                
+                <div class ="filter-group">
+                    <label class="filter-label">Reel type: spining</label>
+                    <div class ="filter-options">
+                        <button class="filter-option active">Spinning</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">length</label>
+                    <div class ="filter-options">
+                        <button class ="filter-option">5.5</button>
+                           <button class ="filter-option">6</button>
+                              <button class ="filter-option active">6.6</button>
+                                 <button class ="filter-option">7</button>
+                    </div>
+                </div>    
+
+                <div class="filter-group">
+                    <label class="filter-label">Power:</label>
+                    <div class ="filter-options">
+                        <button class ="filter-option">Light</button>
+                           <button class ="filter-option">MH</button>
+                                 <button class ="filter-option active">Heavy</button>
+                    </div>
+                </div>
+            </div>
+
+          <div class="quantity-section">
+                <div class="quantity-label">Quantity:</div>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                    <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+                    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                </div>
+            </div>
+
+            <button class="add-to-cart-btn">
+                ADD TO CART
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+    </main>
+
+
+    <div class ="product-detail">
+        <div class ="detail-header">PRODUCT DETAIL</div>
+        <div class ="detail-content">
+            <img src="" alt="Brand Logo" class="detail-logo">
+            <div>
+                <div class="detail-text" id="detailtext">
+                    cywbhvjwnrjvnrwjvkqwrvjbrlqirbqr33rliriu3ui3rbu3riboi ub uibi ob u  unininvmlrm3lkmklqrv 3qrvk3mqvk3rlmqrklvmq3lvm3vivo3io ninoinvoinvorvv2vurhui3rnvknb b jv ejkrnbkjqnbkrnbiqenbirenbiernberinbnklnlknklncklncklqnclkqenceeklnceqkcnel qckleqnclenqcknqeceqlcneqklcneqlcn ceqn cklenqlcnqlcknqelckneqce cqeckneqclneqceq ceqkcneqlkcneqlcnbk bbrj3 nr3n rn lr3n klrn klr3n l3r nroivjir3jvior3jviorjvrjv3oijvo3ijvio3vriojroij3oivjrio3vj3riovj3roivjvjo3roivj3roivjroj3roivjrovirj3ovjr3ovjr3oivj3iovjrov3jvo3jvor3ivji3rovj3rovij3rovr3jvoijr3iovj3rvoij3rviorirj3voi3rjvoi3rjvror3jvi
+                </div>
+                <span class="showmore" id="showmorebtn" onclick="toggleDescription()">Show more</span>
+                </div>
+            </div>
+        </div>        
+
+    <div class="shop-by-brand">
+        <h2 class="brand-title">SHOP BY BAND</h2>
+        <div class="brand-logos">
+            <img src="" alt="Brand 1" class="brand-logo">
+            <img src="" alt="Brand 2" class="brand-logo">
+            <img src="" alt="Brand 3" class="brand-logo">
+            <img src="" alt="Brand 4" class="brand-logo">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class ="footer-container">
+        <!-- ชั้นบน: contact + social -->
+        <div class="footer-top">
+            <div class="contact-info">
+                <span class="bold">Contact TOKPHA & shop</span>
+                
+                <div class ="email">
+                <span>📧 Email: 
+                <a href="mailto:info@tokpha.com">info@tokpha.com</a></span>
+                </div>
+
+                <span class ="telephone">📞1-800-227-776</span>
+            </div>
+
+            <div class="country">
+                    <img src="https://flagcdn.com/w20/th.png" alt="Thailand"> THAILAND
+            </div>
+            
+            <div class="social">
+                <p class ="plsfollow">FOLLOW US</p>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <hr class ="seperate-footer"> <!--ห้ามลบนะอันนี้เส้นคั้นด้านล่างของfooter-top-->
+        <!-- ชั้นกลาง: help / resource / about -->
+        <div class="footer-container">
+        <div class="footer-middle">
+            <div class="footer-col">
+                <h3>HELP</h3>
+                <a href="#">Order status</a>
+                <a href="#">Shipping information</a>
+                <a href="#">Return & Refund</a>
+                <a href="#">Warranty</a>
+            </div>
+
+            <div class="footer-col">
+                <h3 class ="RESOURCE">RESOURCE</h3>
+                <a class ="RESOURCE" href="#">Business sales</a>
+                <a class ="RESOURCE" href="#">Promotion</a>
+                <a class ="RESOURCE" href="#">Affiliate</a>
+            </div>
+
+            <div class="footer-col">
+                <h3 class ="ABOUT" >ABOUT US</h3>
+                <a class ="ABOUT" href="#">Find store</a>
+                <a class ="ABOUT" href="#">Careers</a>
+                <a class ="ABOUT" href="#">Company News</a>
+                <a class ="ABOUT" href="#">About our Founder</a>
+            </div>
+        </div>
+    </div>  
+
+
+
+        <div class="footer-bottom">
+            <p>© 2025 Tokpha. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer src="jsinshop.js">
+    </script>
+</body>
+
