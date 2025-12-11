@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokpla Store - สินค้า</title>
+    <link rel="stylesheet" href="product-pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    
+     <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="Main.html">
+                    <img class="picturelogo" src="https://via.placeholder.com/60x60?text=LOGO" alt="Logo">
+                </a>
+                <div class="store-name">TOKPHA STORE</div>
+            </div>
+            <div class="header-center">
+                <input type="text" placeholder="What can i find for you?">
+            </div>
+            <div class="nav-right">
+                <a href="Main.html">Main</a>
+                <a href="product-pages.html" style="color: #0096c7; font-weight: bold;">Product</a>
+                <a href="contact.html">Contact us</a>
+                <a href="cart.html">
+                    <img src="https://images.emojiterra.com/google/android-12l/512px/1f6d2.png" alt="cart" class="cart-icon">
+                </a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-bottom">
+        <nav class="category-nav">
+            <a href="#">Fishing</a>
+            <a href="#">Fishing bait</a>
+            <a href="#">Fishing reel</a>
+            <a href="#">Fishing line</a>
+        </nav>
+    </div>
+
+    <!-- Main Container with Filter and Products -->
+    <main class="main-container">
+        <!-- Filter Sidebar -->
+        <aside class="filter-side-bar">
+            <div class="filter-header">FILTER BY</div>
+
+            <!-- Stock Filter -->
+            <div class="filter-section">
+                <div class="filter-section-header" onclick="toggleFilter(this)">
+                    <span>Stock</span>
+                    <img class="dropdown-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGd8LdjJRrbH4EK0dnZlA1xXXb7tbeYgnVA&s" alt="dropdown">
+                </div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="stock">
+                        <label for="stock">In stock (12)</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="out-stock">
+                        <label for="out-stock">Out of stock (3)</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Type Filter -->
+            <div class="filter-section">
+                <div class="filter-section-header" onclick="toggleFilter(this)">
+                    <span>Type</span>
+                    <img class="dropdown-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGd8LdjJRrbH4EK0dnZlA1xXXb7tbeYgnVA&s" alt="dropdown">
+                </div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="type1">
+                        <label for="type1">Spinning Rod</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type2">
+                        <label for="type2">Casting Rod</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type3">
+                        <label for="type3">Fly Rod</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type4">
+                        <label for="type4">Trolling Rod</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type5">
+                        <label for="type5">Ice Rod</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="filter-section">
+                <div class="filter-section-header" onclick="toggleFilter(this)">
+                    <span>Brand</span>
+                    <img class="dropdown-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGd8LdjJRrbH4EK0dnZlA1xXXb7tbeYgnVA&s" alt="dropdown">
+                </div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="brand1">
+                        <label for="brand1">Shimano</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="brand2">
+                        <label for="brand2">Daiwa</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="brand3">
+                        <label for="brand3">Abu Garcia</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="brand4">
+                        <label for="brand4">Penn</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Product Section -->
+        <div class="product-section">
+            <!-- Product Row 1 -->
+            <div class="product-row">
+                <div class="product-wrapper">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Row 2 -->
+            <div class="product-row">
+                <div class="product-wrapper">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Row 3 -->
+            <div class="product-row">
+                <div class="product-wrapper">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                        <h3>คันเบ็ด Pro Series</h3>
+                        <p>ราคา: 1,200 บาท</p>
+                        <p>หมวดหมู่: คันเบ็ด</p>
+                        <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                        <button>ADD TO CART</button>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="change-pages">
+                <div class="box-number active" onclick="changePage(this, 1)">1</div>
+                <div class="box-number" onclick="changePage(this, 2)">2</div>
+                <div class="box-number" onclick="changePage(this, 3)">3</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Brand Logos -->
+    <div class="contain-all-logo">
+        <img src="https://via.placeholder.com/120x120?text=TOKPHAR" alt="Brand 1">
+        <img src="https://via.placeholder.com/120x120?text=REDFISH" alt="Brand 2">
+        <img src="https://via.placeholder.com/120x120?text=FISHING" alt="Brand 3">
+        <img src="https://via.placeholder.com/120x120?text=KING" alt="Brand 4">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="contact-info">
+                    <span class="bold">Contact TOKPHA & shop</span>
+                    <span>📧 Email: <a href="mailto:info@tokpha.com">info@tokpha.com</a></span>
+                    <span>📞 1-800-227-776</span>
+                </div>
+                <div class="country">
+                    <img src="https://flagcdn.com/w20/th.png" alt="Thailand"> THAILAND
+                </div>
+                <div class="social">
+                    <p>FOLLOW US</p>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="seperate-footer">
+
+        <div class="footer-container">
+            <div class="footer-middle">
+                <div class="footer-col">
+                    <h3>HELP</h3>
+                    <a href="#">Order status</a>
+                    <a href="#">Shipping information</a>
+                    <a href="#">Return & Refund</a>
+                    <a href="#">Warranty</a>
+                </div>
+                <div class="footer-col">
+                    <h3>RESOURCE</h3>
+                    <a href="#">Business sales</a>
+                    <a href="#">Promotion</a>
+                    <a href="#">Affiliate</a>
+                </div>
+                <div class="footer-col">
+                    <h3>ABOUT US</h3>
+                    <a href="#">Find store</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Company News</a>
+                    <a href="#">About our Founder</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Tokpha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFilter(element) {
+            const filterOptions = element.nextElementSibling;
+            element.classList.toggle('collapsed');
+            
+            if (filterOptions.classList.contains('hidden')) {
+                filterOptions.classList.remove('hidden');
+            } else {
+                filterOptions.classList.add('hidden');
+            }
+        }
+        function changePage(element, pageNumber) {
+            document.querySelectorAll('.box-number').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            element.classList.add('active');
+            console.log('Loading page:', pageNumber);
+        }
+        document.querySelectorAll('.filter-option input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                console.log('Filter changed:', this.id, this.checked);
+            });
+        });
+    </script>
+</body>
+</html>

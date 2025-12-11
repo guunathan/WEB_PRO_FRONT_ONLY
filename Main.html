@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokpla Store</title>
+    <link rel="stylesheet" href="Main-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="Main.html">
+                    <img class="picturelogo" src="img/new_logo01.png" alt="Logo">
+                </a>
+                <div class="store-name">TOKPHA STORE</div>
+            </div>
+
+            <div class="header-center">
+                <input type="text" placeholder="What can i find for you?">
+            </div>
+
+            <div class="nav-right">
+                <a class ="startnav-right" href="Main.html">Main</a>
+                <a href="product-pages.html">Product</a>
+                <a href="contact.html">Contact us</a>
+                <a href="cart.html">
+                    <img src="https://images.emojiterra.com/google/android-12l/512px/1f6d2.png" alt="cart"
+                        class="cart-icon">
+                </a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-bottom">
+        <nav class="category-nav">
+            <a href="#">Fishing</a>
+            <a href="#">Fishing bait</a>
+            <a href="#">Fishing reel</a>
+            <a href="#">Fishing line</a>
+        </nav>
+    </div>
+
+    <main class="main-container">
+        <section class="hero">
+            <d class="hero-content">
+                <h2>TOKPHA &</h2>
+                <p class="tag">Fishing gear</p>
+                <h1 class="hero-title">Fishing box</h1>
+
+                <div class="hero-image">
+                    <img class="picture-promote" src="new_logo01.png" alt="Fishing Gear">
+                </div>
+                
+
+                <div class="price">
+                    <span class="old-price">15000.0</span>
+                    <span class="new-price">12000.0</span>
+                    <span class="baht">baht.</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <div class="void">
+                        <p class="desc">ONE FOR ALL</p>
+                        <a href="cart.html" class="order-btn">Order now</a>
+                        <a id ="viewmodal" class="view-link">view detail ↗</a>
+                    </div>
+                
+                    <div class="bigdots">
+                        <div class="dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+                    <div id="detailmodal" class="modal">
+                    <div class="modal-cont">
+                        <span class="close">&times;</span>
+                        <div class="modal-header">
+                            <div class="modal-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <h2>Product Details</h2>
+                        </div>
+                        <div class="contain-cotdetail">
+                            <div class="detail-section">
+                                <h3><i class="fas fa-info-circle"></i> Description</h3>
+                                <p>Fishing box คุณภาพสูง ผลิตจากวัสดุกันน้ำพิเศษ ทนทานต่อสภาพอากาศทุกแบบ เหมาะสำหรับนักตกปลามืออาชีพและผู้ที่รักการตกปลา</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-ruler-combined"></i> Specifications</h3>
+                                <ul class="spec-list">
+                                    <li><strong>ขนาด:</strong> 40 x 25 x 30 cm</li>
+                                    <li><strong>น้ำหนัก:</strong> 2.5 kg</li>
+                                    <li><strong>วัสดุ:</strong> ABS Plastic กันน้ำ</li>
+                                    <li><strong>ช่องเก็บของ:</strong> 8 ช่อง ปรับขนาดได้</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-star"></i> Features</h3>
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check-circle"></i> กันน้ำ 100%</li>
+                                    <li><i class="fas fa-check-circle"></i> ช่องเก็บของปรับได้</li>
+                                    <li><i class="fas fa-check-circle"></i> มีสายสะพายแข็งแรง</li>
+                                    <li><i class="fas fa-check-circle"></i> รับประกัน 2 ปี</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-footer">
+                                <div class="price-section">
+                                    <span class="modal-old-price">15,000 บาท</span>
+                                    <span class="modal-new-price">12,000 บาท</span>
+                                </div>
+                                <button class="modal-btn-primary">
+                                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <div class="product-section">
+            <!-- 1-->
+            <div class="product-row">
+                <div class="product-scroll-container">
+                    <button class="scroll-btn left" onclick="scrollProducts(this, 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="product-wrapper">
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right" onclick="scrollProducts(this, 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--2-->
+            <div class="product-row">
+                <div class="product-scroll-container">
+                    <button class="scroll-btn left" onclick="scrollProducts(this, 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="product-wrapper">
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right" onclick="scrollProducts(this, 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--3 -->
+            <div class="product-row">
+                <div class="product-scroll-container">
+                    <button class="scroll-btn left" onclick="scrollProducts(this, 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="product-wrapper">
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/280x200?text=Fishing+Rod" alt="Fishing Rod">
+                            <h3>คันเบ็ด Pro Series</h3>
+                            <p>ราคา: 1,200 บาท</p>
+                            <p>หมวดหมู่: คันเบ็ด</p>
+                            <p>คำอธิบาย: คันเบ็ดคุณภาพสูงสำหรับมืออาชีพ</p>
+                            <button>ADD TO CART</button>
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right" onclick="scrollProducts(this, 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class ="contain-all-logo">
+            <div class="control-logo1">
+            <img src ="data:image/png;base64,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">
+            </div>
+            <div class="control-logo2">
+            <img src ="data:image/jpeg;base64,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">
+            </div>
+            <div class ="control-logo3">
+            <img src="data:image/jpeg;base64,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">
+            </div>
+            <div class="control-logo-4">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZotP1S8JkI_126aILpm0rpTIyULsH21QkRw&s">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class ="footer-container">
+        <!-- ชั้นบน: contact + social -->
+        <div class="footer-top">
+            <div class="contact-info">
+                <span class="bold">Contact TOKPHA & shop</span>
+                
+                <div class ="email">
+                <span>📧 Email: 
+                <a href="mailto:info@tokpha.com">info@tokpha.com</a></span>
+                </div>
+
+                <span class ="telephone">📞1-800-227-776</span>
+            </div>
+
+            <div class="country">
+                    <img src="https://flagcdn.com/w20/th.png" alt="Thailand"> THAILAND
+            </div>
+            
+            <div class="social">
+                <p class ="plsfollow">FOLLOW US</p>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <hr class ="seperate-footer"> <!--ห้ามลบนะอันนี้เส้นคั้นด้านล่างของfooter-top-->
+        <!-- ชั้นกลาง: help / resource / about -->
+        <div class="footer-container">
+        <div class="footer-middle">
+            <div class="footer-col">
+                <h3>HELP</h3>
+                <a href="#">Order status</a>
+                <a href="#">Shipping information</a>
+                <a href="#">Return & Refund</a>
+                <a href="#">Warranty</a>
+            </div>
+
+            <div class="footer-col">
+                <h3 class ="RESOURCE">RESOURCE</h3>
+                <a class ="RESOURCE" href="#">Business sales</a>
+                <a class ="RESOURCE" href="#">Promotion</a>
+                <a class ="RESOURCE" href="#">Affiliate</a>
+            </div>
+
+            <div class="footer-col">
+                <h3 class ="ABOUT" >ABOUT US</h3>
+                <a class ="ABOUT" href="#">Find store</a>
+                <a class ="ABOUT" href="#">Careers</a>
+                <a class ="ABOUT" href="#">Company News</a>
+                <a class ="ABOUT" href="#">About our Founder</a>
+            </div>
+        </div>
+    </div>  
+        <div class="footer-bottom">
+            <p>© 2025 Tokpha. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer src="alljsinmain.js">
+    </script>
+</body>
+
+</html>
